@@ -23,7 +23,7 @@
  */
 
 /// A number between 1 and 40 (inclusive).
-public struct QRCodeVersion: Hashable, Comparable {
+public struct QRCodeVersion: Hashable, Comparable, Sendable {
     /// The minimum version number supported in the QR Code Model 2 standard.
     public static let min = QRCodeVersion(1)
     /// The maximum version number supported in the QR Code Model 2 standard.

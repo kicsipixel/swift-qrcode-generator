@@ -1,7 +1,10 @@
 # Swift QR Code Generator
 
-[![Linux](https://github.com/fwcd/swift-qrcode-generator/actions/workflows/linux.yml/badge.svg)](https://github.com/fwcd/swift-qrcode-generator/actions/workflows/linux.yml)
-[![Darwin](https://github.com/fwcd/swift-qrcode-generator/actions/workflows/darwin.yml/badge.svg)](https://github.com/fwcd/swift-qrcode-generator/actions/workflows/darwin.yml)
+[![Swift 6.1](https://img.shields.io/badge/Swift-6.1-orange.svg)](https://swift.org)
+[![Platforms](https://img.shields.io/badge/Platforms-macOS%20|%20iOS-blue.svg)](https://developer.apple.com)
+[![Linux](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/linux.yml/badge.svg)](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/linux.yml)
+[![Darwin](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml/badge.svg)](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A QR code generator written in pure Swift with no dependencies.
 
@@ -13,15 +16,7 @@ The project is mostly a direct translation of [Nayuki's](https://github.com/nayu
 To use in your project, add the following dependency to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/fwcd/swift-qrcode-generator.git", from: "1.0.0")
-```
-
-### CocoaPods
-Swift QR Code Generator is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```bash
-pod 'SwiftQRCodeGenerator'
+.package(url: "https://github.com/kicsipixel/swift-qrcode-generator.git", from: "1.0.1")
 ```
 
 ## Example

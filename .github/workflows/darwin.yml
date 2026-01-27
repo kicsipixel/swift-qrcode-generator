@@ -4,13 +4,11 @@ on: [push]
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: macOS-15
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build SPM
+    - uses: actions/checkout@v4
+    - name: Build
       run: swift build
-    - name: Test SPM
+    - name: Test
       run: swift test
-    - name: Lint Podspec
-      run: pod lib lint --allow-warnings --use-libraries

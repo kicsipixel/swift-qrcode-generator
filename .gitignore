@@ -6,3 +6,5 @@ Packages
 *.xcodeproj
 *.swp
 xcuserdata/
+CL*
+.swiftpm/
