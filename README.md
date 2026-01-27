@@ -22,6 +22,7 @@ To use in your project, add the following dependency to your `Package.swift`:
 ```swift
 import QRCodeGenerator
 
-let qr = try! QRCode.encode(text: text, ecl: .medium)
+let url = "https://hummingbird.codes/"
+let qr = try! QRCode.encode(text:url, ecl: .medium)
 let svg = qr.toSVGString(border: 4)
 ```
