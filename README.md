@@ -1,9 +1,8 @@
 # Swift QR Code Generator
 
 [![Swift 6.1](https://img.shields.io/badge/Swift-6.1-orange.svg)](https://swift.org)
-[![Platforms](https://img.shields.io/badge/Platforms-macOS%20|%20iOS-blue.svg)](https://developer.apple.com)
+[![macOS](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml/badge.svg)](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml)
 [![Linux](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/linux.yml/badge.svg)](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/linux.yml)
-[![Darwin](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml/badge.svg)](https://github.com/kicsipixel/swift-qrcode-generator/actions/workflows/darwin.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A QR code generator written in pure Swift with no dependencies.

@@ -1,10 +1,10 @@
-/* 
+/*
  * QR Code generator library (Swift)
- * 
+ *
  * Copyright (c) Project Nayuki. (MIT License)
  * https://www.nayuki.io/page/qr-code-generator-library
  * Copyright (c) 2020 fwcd
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
  * the Software without restriction, including without limitation the rights to
@@ -24,10 +24,10 @@
 
 /// A number between 0 and 7 (inclusive).
 public struct QRCodeMask: Hashable {
-    public let value: UInt8
-    
-    public init(_ value: UInt8) {
-        assert(value <= 7, "Mask value out of range")
-        self.value = value
-    }
+  public let value: UInt8
+
+  public init(_ value: UInt8) {
+    assert(value <= 7, "Mask value out of range")
+    self.value = value
+  }
 }
