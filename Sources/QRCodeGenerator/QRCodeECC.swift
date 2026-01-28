@@ -23,7 +23,7 @@
  */
 
 /// The error correction level in a QR Code symbol.
-public enum QRCodeECC: UInt {
+public enum QRCodeECC: UInt, Sendable {
   /// The QR Code can tolerate about  7% erroneous codewords.
   case low = 0
   /// The QR Code can tolerate about 15% erroneous codewords.

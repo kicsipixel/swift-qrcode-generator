@@ -23,7 +23,7 @@
  */
 
 /// A number between 0 and 7 (inclusive).
-public struct QRCodeMask: Hashable {
+public struct QRCodeMask: Hashable, Sendable {
   public let value: UInt8
 
   public init(_ value: UInt8) {

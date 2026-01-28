@@ -46,7 +46,7 @@ private let alphanumericCharset: [Character] = [
 /// This segment struct imposes no length restrictions, but QR Codes have restrictions.
 /// Even in the most favorable conditions, a QR Code can only hold 7089 characters of data.
 /// Any segment longer than this is meaningless for the purpose of generating QR Codes.
-public struct QRSegment: Hashable {
+public struct QRSegment: Hashable, Sendable {
   /// The mode indicator of this segment.
   public let mode: Mode
   /// The length of this segment"s unencoded data. Measured in characters for
@@ -207,7 +207,7 @@ public struct QRSegment: Hashable {
   }
 
   /*---- QrSegmentMode functionality ----*/
-  public enum Mode: Hashable {
+  public enum Mode: Hashable, Sendable {
     case numeric
     case alphanumeric
     case byte

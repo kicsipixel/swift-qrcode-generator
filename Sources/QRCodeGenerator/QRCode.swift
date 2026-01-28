@@ -27,7 +27,7 @@ import Foundation
 /// A QR code represented as a matrix of black/white modules.
 /// Contains factory methods for encoding QR codes from text
 /// or binary.
-public struct QRCode {
+public struct QRCode: Sendable {
   // Scalar parameters:
 
   /// The version number of this QR Code, which is between 1 and 40 (inclusive).

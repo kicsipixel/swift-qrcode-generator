@@ -22,7 +22,7 @@
  *   Software.
  */
 
-public enum QRCodeError: Error {
+public enum QRCodeError: Error, Sendable {
   /// The error type when the supplied data does not fit any QR Code version.
   ///
   /// Ways to handle this exception include:

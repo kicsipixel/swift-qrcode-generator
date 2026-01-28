@@ -23,12 +23,12 @@
  */
 
 // For use in getPenaltyScore(), when evaluating which mask is best.
-public let penaltyN1: Int = 3
-public let penaltyN2: Int = 3
-public let penaltyN3: Int = 40
-public let penaltyN4: Int = 10
+let penaltyN1: Int = 3
+let penaltyN2: Int = 3
+let penaltyN3: Int = 40
+let penaltyN4: Int = 10
 
-public let eccCodewordsPerBlock: [[Int]] = [
+let eccCodewordsPerBlock: [[Int]] = [
   // Version: (note that index 0 is for padding, and is set to an illegal value)
   //0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40    Error correction level
   [-1, 7, 10, 15, 20, 26, 18, 20, 24, 30, 18, 20, 24, 26, 30, 22, 24, 28, 30, 28, 28, 28, 28, 30, 30, 26, 28, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30],  // Low
@@ -37,7 +37,7 @@ public let eccCodewordsPerBlock: [[Int]] = [
   [-1, 17, 28, 22, 16, 22, 28, 26, 26, 24, 28, 24, 28, 22, 24, 24, 30, 28, 28, 26, 28, 30, 24, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30],  // High
 ]
 
-public let numErrorCorrectionBlocks: [[Int]] = [
+let numErrorCorrectionBlocks: [[Int]] = [
   // Version: (note that index 0 is for padding, and is set to an illegal value)
   //0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40    Error correction level
   [-1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4, 6, 6, 6, 6, 7, 8, 8, 9, 9, 10, 12, 12, 12, 13, 14, 15, 16, 17, 18, 19, 19, 20, 21, 22, 24, 25],  // Low
