@@ -203,7 +203,7 @@ public struct QRSegment: Hashable, Sendable {
   // Tests whether the given string can be encoded as a segment in numeric mode.
   // A string is encodable iff each character is in the range 0 to 9.
   public static func isNumeric(_ text: [Character]) -> Bool {
-    text.allSatisfy { $0.isNumber }
+    text.allSatisfy { $0.isASCII && $0.isNumber }
   }
 
   /*---- QrSegmentMode functionality ----*/
